@@ -22,9 +22,9 @@ public class Auxiliar {
 		return letra == NIF_STRING_ASOCIATION.charAt(dni % 23);
 	}
 	
-	public static int calcularEdad(LocalDate fechaNacimiento){
+	public static int calcularTiempoDesdeActual(LocalDate fecha){
 		LocalDate hoy = LocalDate.now();
-		Period p = Period.between(fechaNacimiento, hoy);
+		Period p = Period.between(fecha, hoy);
 		return p.getYears();
 	}
 	
@@ -36,7 +36,7 @@ public class Auxiliar {
 	public static void main(String[] args) {
 		System.out.println(validarNIF("11111111h"));
 		LocalDate birthday = LocalDate.of(960, Month.JANUARY, 1);
-		System.out.println(calcularEdad(birthday));
+		System.out.println(calcularTiempoDesdeActual(birthday));
 
 	}
 	

@@ -3,7 +3,7 @@ package com.iesvirgendelcarmen.ejercicios.ejercicio2;
 import java.time.LocalDate;
 import java.time.Month;
 
-public class ProfesorInterino extends Profesor{
+public class ProfesorInterino extends Profesor {
 	
 	private LocalDate annoIncorporacion;
 
@@ -13,11 +13,21 @@ public class ProfesorInterino extends Profesor{
 		this.annoIncorporacion = annoIncorporacion;
 	}
 
+	
+	
+	public LocalDate getAnnoIncorporacion() {
+		return annoIncorporacion;
+	}
+
+
+
 	@Override
 	public String toString() {
 		return "ProfesorInterino [annoIncorporacion=" + Auxiliar.formatearFecha(annoIncorporacion)
 		+ ", toString()=" + super.toString() + "]";
 	}
+	
+	
 	
 	public static void main(String[] args) {
 		LocalDate fechaNacimientoPersona = LocalDate.of(1960, Month.JANUARY, 1);

@@ -25,7 +25,7 @@ public class Persona {
 	@Override
 	public String toString() {
 		return apellidosPersona + ", " + nombrePersona +
-				". Edad: " + Auxiliar.calcularEdad(fechaNacimientoPersona);
+				". Edad: " + Auxiliar.calcularTiempoDesdeActual(fechaNacimientoPersona);
 	}
 	
 	public static void main(String[] args) {

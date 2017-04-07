@@ -17,6 +17,12 @@ public class ProfesorTitular extends Profesor {
 	
 	
 	
+	public LocalDate getFechaOposicion() {
+		return fechaOposicion;
+	}
+
+
+
 	@Override
 	public String toString() {
 		return "ProfesorTitular [fechaOposicion=" + Auxiliar.formatearFecha(fechaOposicion)
